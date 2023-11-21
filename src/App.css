@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Altura / vh - altura */
+    width: 100vw;
+    /*  vw - largura */
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.caixa-maior {
+    background-color: #000000;/*  Troca cor de fundo  */
+    width: 95%; /*  Largura  */
+    max-width: 420px; /*  Largura  Maxima */
+    opacity: 0.8;/* transparencia do item */
+    padding: 20px;
+    border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    border: none;/* borda do elemento */
+    outline: none;/* borda quando seleciona o elemento */
+    padding: 10px;/* espaçamento interno */
+    border-radius: 24px;/* arredonda as bordas */
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+    width: calc( 100% - 100px);
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    float: right;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background-color: #7c7c7c6b;
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.caixa-menor {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.lupa {
+    height: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px; /* tamanho do texto */
+}
+
+.temp {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.descricao {
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+}
+
+.umidade {
+    color: #ffffff;
+    margin-top: 30px;
 }
